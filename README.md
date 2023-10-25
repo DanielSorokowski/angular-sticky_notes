@@ -1,4 +1,4 @@
-# AngularStickyNotes
+# [AngularStickyNotes](https://danielsorokowski.github.io/angular-sticky_notes/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
