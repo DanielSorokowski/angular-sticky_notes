@@ -1,0 +1,8 @@
+<main class="app">
+  <h1>{{title}}</h1>
+  <button (click)="addNote()">Create Note</button>
+
+  <div *ngFor="let note of notes">
+    <app-note [note]="note" ></app-note>
+  </div>
+</main>
