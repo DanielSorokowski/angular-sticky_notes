@@ -1,48 +1,5 @@
+import { Background } from "./background";
 import { Color } from "./color";
-import { Note } from "./note";
-
-export const Notes: Note[] = [
-  {
-    id: 0,
-    title: 'Title #1',
-    text: 'Content #1',
-    x: '50px',
-    y: '50px',
-    color: '#165caf',
-  },
-  {
-    id: 1,
-    title: 'Title #2',
-    text: 'Content #2',
-    x: '50px',
-    y: '50px',
-    color: '#ffa',
-  },
-  {
-    id: 2,
-    title: 'Title #3',
-    text: 'Content #3',
-    x: '50px',
-    y: '50px',
-    color: '#5d727b',
-  },
-  {
-    id: 3,
-    title: 'Title #4',
-    text: 'Content #4',
-    x: '50px',
-    y: '50px',
-    color: '#46c45a',
-  },
-  {
-    id: 4,
-    title: 'Title #5',
-    text: 'Content #5',
-    x: '50px',
-    y: '50px',
-    color: '#ff7eb9',
-  },
-]
 
 export const Colors: Color[] = [
   {
@@ -76,5 +33,28 @@ export const Colors: Color[] = [
   {
     id: 7,
     color: '#46c45a'
+  },
+]
+
+export const Backgrounds: Background[] = [
+  {
+    id: 0,
+    name: 'Basic',
+    url: 'https://raw.githubusercontent.com/DanielSorokowski/angular-sticky_notes/main/src/assets/basic.png'
+  },
+  {
+    id: 1,
+    name: 'ping board',
+    url: 'https://raw.githubusercontent.com/DanielSorokowski/angular-sticky_notes/main/src/assets/pin-board.jpg'
+  },
+  {
+    id: 2,
+    name: 'Wood',
+    url: 'https://raw.githubusercontent.com/DanielSorokowski/angular-sticky_notes/main/src/assets/wood.jpg'
+  },
+  {
+    id: 3,
+    name: 'Fridge',
+    url: 'https://raw.githubusercontent.com/DanielSorokowski/angular-sticky_notes/main/src/assets/fridge.jpg'
   },
 ]

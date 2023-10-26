@@ -1,0 +1,9 @@
+<section class="settings">
+  <h2 class="settings__title">{{'Change Background' | uppercase}}</h2>
+  <ul class="settings__background">
+    <li class="settings__background-element" *ngFor="let background of backgrounds">
+      <h3 class="settings__background-element-title">{{background.name | titlecase}}</h3>
+      <img class="settings__background" [src]="background.url" (click)="changeBackground(background.url)" [class.active]="background.url === selectedBackground">
+    </li>
+  </ul>
+</section>

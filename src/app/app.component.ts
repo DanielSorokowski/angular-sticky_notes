@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Note } from './note';
-import { Notes } from './data';
 
 @Component({
   selector: 'app-root',
@@ -8,26 +6,9 @@ import { Notes } from './data';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Notes'
+  background: string = localStorage.getItem('background') || 'https://raw.githubusercontent.com/DanielSorokowski/angular-sticky_notes/main/src/assets/basic.png';
 
-  notes: Note[] = []
-
-  getNotes(): void {
-    this.notes = Notes
-  }
-
-  ngOnInit(): void {
-    this.getNotes()
-  }
-
-  addNote(): void {
-    this.notes.push({
-      id: this.notes[this.notes.length - 1].id,
-      title: '',
-      text: '',
-      x: '500px',
-      y: '500px',
-      color: '#ffa',
-    })
+  updateBackground(url: string): void {
+    this.background = url;
   }
 }
